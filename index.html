@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css</title>
+
+    <!-- * External Css / Css Bağlantı -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- * Internal Css -->
+    <!-- <style>
+      h1 {
+        background-color: red;
+        color: yellow;
+        font-size: 60px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h3 {
+        color: darkblue;
+        font-size: 55px;
+        background-color: darkorange;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- * Html ile oluşturulan elemanların still(arka plan rengi,yazı boyutu,yazı fontu,...) özelliklerini css ile düzenleriz.Css ile html elemanları stillendirilirken 3 farklı yöntem kullanılır:  -->
+
+    <!-- * 1-) İnline Css (Satır içi): Html de yer alan elemanlara inline şekilde still verirken bu elemanın açılış etiketi içerisinde eleman adından sonra bir boşluk bırakılır sonrasında 'style='' ' yazılır.Bu style='' içerisinde still özellikleri aktarılır. -->
+
+    <!-- * 2-) Internal Css ( Html Dosyası İçerisinde style tagleri arasında Css verme):Bu yöntem ile css kullanırken Html head kısımı içerisinde style tagi oluşturulur.Bu tag içerisinde css özelliği verilecek elemanın adı yazılır.Sonrasında {} açılır ve bu {} içerisinde property-value çiftleri halinde css özelliği aktarılır.  -->
+
+    <!-- * 3-) External Css (Harici Css Dosyalarında Css Özelliği Verme):Bu yöntemde Html kodları .html uzantılı Css kodlarıysa .css uzantılı dosyalarda yazılır. -->
+
+    <!-- <h1 style="background-color: red; color: yellow; font-size: 60px">
+      Udemig Akademi
+    </h1> -->
+    <h1>Udemig Akademi</h1>
+    <h2>Udemig Akademi</h2>
+    <!-- <h3 style="color: darkblue; font-size: 55px">Udemig Akademi</h3> -->
+    <h3>Udemig Akademi</h3>
+
+    <h4>Udemig Akademi</h4>
+    <h5>Udemig Akademi</h5>
+    <h6>Udemig Akademi</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis
+      esse et dolorem, dolorum facere sit officia accusantium corrupti, ipsum
+      accusamus animi rem cum veniam perferendis sapiente nesciunt architecto
+      nihil.
+    </p>
+
+    <img src="https://picsum.photos/200" alt="" />
+
+    <b
+      >Udemig Akademi Css dersinden selamlar !!Udemig Akademi Css dersinden
+      selamlar !!</b
+    >
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+      sapiente quasi in alias aspernatur dignissimos quod minima vitae ea, omnis
+      neque consequuntur ad dolorem optio consequatur quidem laudantium mollitia
+      nisi expedita eligendi porro sint? Nesciunt id error voluptatem odio
+      expedita.
+    </p>
+    <!--  Html de bazı elemanlar bulunduğu satırın tamamını kaplarken bazı elemanlar bulunduğu satırda içeriği kadar alan kaplar.Bu özellik rastgele bir durum değildir Htmldeki elemanların 'İnline' yada 'Block' eleman olmasından kaynaklanır. -->
+
+    <!-- * İnline elemanlar bulunduğu satırda elemanın içeriği kadar alan kaplar.
+     
+    Ör: img,b,i,span
+
+    span projelerde belirli bir etiket içerisinde spesifik bir kısıma still vermek için çokça kullanılır.
+    Örneğin logo içerisinde belirli bir kısıma farklı arka plan rengi verilmesi
+    
+    -->
+
+    <!-- * Block elemanlarsa bulunduğu satırın tamamını kaplar.
+
+     
+    Ör: h1--h6,p,div
+
+   div projelerde kapsayıcı eleman olarak kullanılır.Yani birkaç elemanı bir arada tutmak ve hizalamak için bir kapsayıcıya ihtiyaç duyulur bunun içinde div kullanılır.
+
+
+    -->
+
+    <div>Bu bir div etiketidir.</div>
+    <span>Bu bir span etiketidir.Bu bir span etiketidir.</span>
+
+    <!-- Html de oluşturulan elemanlara Css de eleman adıyla erişip still özellikleri verdiğimizde bu eleman ile aynı isime sahip tüm Html etiketlerinde verilen still özellikleri geçerli oldu.Bu durum proje geliştirirken sıkıntı yaratacaktır.Çünkü örneğin h1 etiketine verilen bir kırmızı arkaplan rengi tüm h1 etiketlerinde geçerli olacaktır.Bu noktada bu elemanları ayırmak için bir ayıraça ihtiyaç duyarız.Bu ayıraç içinse 'class' yada 'id' kullanılabilir. -->
+
+    <!-- class yapısı daha çok tekrar eden durumlar için kullanılır.Class kullanılırken Html elemanının açılış tagi içerisinde class='' yazılarak buradaki '' içerisinde bu class için bir isim verilir.İsim verilirken class adı aarsında boşluk bırakılmaz.Boşluk bırakıldığında herbir kelime bir class olarak tanımlanır.Bu noktada birden fazla kelimeden oluşan bir class adı kullanılacaksa kelimeler arasına '-' konulur.Oluşturulan bu class a Css de erişirken  class adının başına '.' konulur.
+    . class adının sonrasında {} açılır ve bu {} içerisinde css kodlaması yapılır. 
+    -->
+
+    <!-- id yapısıysa daha çok benzersiz kısımlar için kullanılır.Bir elemana id verilirken bu elemanın açılış tag i içerisinde id='' yazılır ve buradaki '' içerisinde bu elemana bir id adı verilir.Verilen bu id ile elemana erişmek için css de id adı başına '#' konulur. # id adı sonrasında  {} açılır ve bu {} içerisinde css kodlaması yapılır.  -->
+    <p class="açıklama">Selin</p>
+    <p>Murat</p>
+    <p class="açıklama mavi-arkaplan">Adem</p>
+
+    <i class="açıklama">Didem</i>
+
+    <a href="#" id="link">Amazon</a>
+    <button id="link">Buton</button>
+
+    <div class="image-kapsayıcı"></div>
+
+    <br />
+
+    <h1 class="list-title">Öğrenciler:</h1>
+    <ul class="list-kapsayıcı">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı1">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı2">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı3">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı4">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı5">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı6">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı7">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı8">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı9">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı10">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı11">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+    <ul class="list-kapsayıcı12">
+      <li>Samet</li>
+      <li>Fevzi</li>
+      <li>Öznur</li>
+      <li>Didem</li>
+    </ul>
+
+    <h2 class="text">udemig akademi</h2>
+    <p class="desc">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt totam,
+      labore officiis earum explicabo ab pariatur consequuntur? Possimus unde,
+      inventore veritatis culpa consequatur ipsum quos, dicta hic maxime, velit
+      obcaecati!
+    </p>
+
+    <a href="#" class="link" id="link1">Amazona Git</a>
+    <br /><br /><br /><br /><br />
+    <a href="#" class="link" id="link2">Amazona Git</a>
+    <br /><br /><br /><br /><br />
+    <a href="#" class="link" id="link3">Amazona Git</a>
+    <br /><br /><br /><br /><br />
+    <a href="#" class="link" id="link4">Amazona Git</a>
+    <br /><br /><br /><br /><br />
+    <a href="#" class="link" id="link5">Amazona Git</a>
+
+    <p>
+      <span class="inline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </span>
+      Asperiores debitis inventore odio velit eveniet assumenda laboriosam sint
+      nesciunt officia, delectus omnis esse quis doloremque amet aperiam
+      repudiandae doloribus eaque quidem?
+    </p>
+
+    <!-- * Flexbox Yapısı -->
+
+    <!-- Html deki elemanları esnek bir şekilde hizalamak için flexbox yapısı kullanılır.Flexbox yapısı display:flex ile aktif edilir.Bu kod esnek bir şekilde hizalama yapılmak istenen elemanların kapsayıcısına verilir.Bu sayede kapsayıcı içerisinde bulunan elemanlar kolayca hizalanabilir.Flexbox yapısı aktif olduğunda  birkaç kod kullanılabilir hale gelir.  -->
+
+    <div class="container">
+      <div class="eleman">Eleman-1</div>
+      <div class="eleman">Eleman-2</div>
+      <div class="eleman">Eleman-3</div>
+      <div class="eleman">Eleman-4</div>
+      <div class="eleman">Eleman-5</div>
+      <div class="eleman">Eleman-6</div>
+      <div class="eleman">Eleman-7</div>
+      <div class="eleman">Eleman-8</div>
+      <div class="eleman">Eleman-9</div>
+      <div class="eleman">Eleman-10</div>
+    </div>
+  </body>
+</html>

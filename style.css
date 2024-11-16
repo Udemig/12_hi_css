@@ -1,0 +1,335 @@
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Work Sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Inconsolata */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+h1 {
+  background-color: red; /* Elemana arka plan rengi vermek için kullanılır.  */
+  color: yellow; /*  Elemanın yazı rengini değiştirmek için kullanılır. */
+  font-size: 60px; /* Elemanın yazı boyutunu değiştirmek için kullanılır. */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Elemanın fontunu değiştirmek için kullanılır.  */
+
+  border: 5px solid #6482ad; /* Elemanın etrafına kenarlık çizmek için kullanılır.Bu Css özelliği 3 değer alır.Birincisi (border-width) borderın kalınlığı ikincisi (border-style) borderın tipi üçüncüsü (border-color) borderın rengi  */
+
+  /* padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 44px;
+  padding-bottom: 32px; */
+
+  padding: 44px 30px 32px 20px; /* Elemana iç boşluk vermek için kullanılır.Tek değer alırsa alınan bu değer dahilinde elemanın etrafında boşluk bırakır.Ama eğer her yönden eşit boşluk istemezsek bunun için padding-left,padding-right,padding-top,padding-bottom şeklinde ayrı ayrı boşluklar verebiliriz.Bu dört değeri ayrı ayrı yazmak yerine tek satırda da yazarız.Bu noktada ilk değeri padding-top olarak belirler ve diğer değerleri saatin dönme yönünde dağıtır. */
+
+  width: 31.25rem; /* Elemanın genişliğini belirlemek için kullanılır. */
+  height: 440px; /* Elemanın yüksekliğini belirlemek için kullanılır. */
+}
+
+/* Elemanların genişlik ve yükseklikleri belirlenirken px,%,rem,vh,vw kullanılabilir.
+
+px ve rem birer uzunluk birimidir.
+
+% ise elemanın kapsayıcısına  göre genişlik yada yükseklik almasını sağlar.
+
+*/
+
+/* 
+  * Border Type Değerleri
+
+  solid ==> Düz çizgi şeklinde border için kullanılır
+
+  dotted ==> Noktalı noktalı şeklinde border için kullanılır
+
+  dashed ==> Çizgili çizgili şeklinde border için kullanılır
+
+  double ==> Çift çizgi şeklinde border için kullanılır
+
+  groove ==> Çerçeve şeklinde border için kullanılır
+
+  
+  */
+
+h3 {
+  color: darkblue;
+  font-size: 55px;
+  background-color: darkorange;
+  border: 5px dashed #1a3636;
+  padding: 22px 34px 50px 35px;
+  font-family: "Open Sans", sans-serif;
+  width: 80%;
+}
+
+/* * Css Renk Değiştirme Yöntemleri
+
+1-) rgb / rgba ile renk verme: rgb red,green,blue ana renklerinin bir araya gelerek farklı renk tonlarını oluşturmasıdır.Bu yapıda her renk 0 ile 255 arasında değer alır.Farklı değerler neticesinde farklı renkler ortaya çıkar.
+
+2-) hex kodu ile renk verme: 3,6 veya 8 haneli rakam ve harflerden oluşan kodlara hex kodu denir.Her hex kodu farklı bir rengi ifade eder.
+
+3-) hsl ile renk verme: hsl(hue,saturation,lightness) değerleri ile renk verme yöntemidir.Hue 0 ile 360 arasında değer alırken  saturation ve lightness %0 -- %100 arasında değer alır.Ver her hsl değeri farklı bir renge karşılık gelir.
+
+
+*/
+
+h2 {
+  background-color: #ed3ef7;
+  font-size: 55px;
+  border: 5px dotted #134b70;
+  /* margin-top: 33px;
+  margin-right: 44px;
+  margin-bottom: 55px;
+  margin-left: 66px; */
+  margin: 33px 44px 55px 66px; /* Elemana dışarıdan boşluk vermek için kullanılır.Padding anlatırken değindiğimiz dörtlü değer kullanımı marginde de mevcuttur. */
+  font-family: "Work Sans", sans-serif;
+}
+
+h4 {
+  background-color: #508d4e;
+  font-size: 44px;
+  border: 5px double #dca47c;
+  padding: 20px 30px 66px 0;
+}
+
+h5 {
+  background-color: dimgray;
+  font-size: 60px;
+  border: 5px groove #f4ce14;
+}
+
+h6 {
+  background-color: brown;
+  font-size: 35px;
+  /* border-width: 5px;
+  border-color: darkgoldenrod;
+  border-style: dashed; */
+  font-family: "Inconsolata", monospace;
+  border: 5px dashed darkgoldenrod;
+}
+
+p {
+  background-color: aqua;
+  font-size: 30px;
+  border-right: 5px solid red;
+  padding: 20px;
+  font-weight: 900; /* Elemanın yazı kalınlığını ayarlamak için kullanılır. */
+}
+
+/* 
+* İngilizce Yönler
+
+* top ==> Yukarı
+
+* bottom ==> Aşşağı
+
+* left ==> Sol
+
+* right ==> Sağ
+
+
+
+*/
+
+/* ! margin ve padding de dört ve tek değer kullanımı gördük.Eğer ikili ve 3lü kullanım olursa nasıl olacak buna bakalım.Eğer ikili değer verilirse birinci değer yukarıdan ve aşağıdan gerçerli olur.Eğer üçlü değer verilirse birincisi yukarıdan ikincisi soldan sağdan üçüncüsü aşağıdan geçerli olur.   */
+
+b {
+  background-color: chartreuse;
+}
+
+div {
+  background-color: hotpink;
+}
+
+span {
+  background-color: lightcoral;
+}
+
+.açıklama {
+  background-color: crimson;
+  color: #dca47c;
+  font-size: 55px;
+}
+
+#link {
+  background-color: red;
+  font-size: 44px;
+  border: 5px solid green;
+  text-decoration: none; /* a etiketleri default değer olarak altı çizilidir.Bunu  text-decoration özelliğiyle düzenleriz.  */
+}
+
+.mavi-arkaplan {
+  background-color: blue;
+}
+
+.image-kapsayıcı {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  background-image: url("https://picsum.photos/200"); /* Elemanın arkaplanına resim vermek için kullanılır. */
+  background-repeat: no-repeat; /* Elemanın arkaplanına verilen resim kapsayıcıdan küçük olursa bu alanı kaplamak için kendini tekrar eder.Bu tekrarı engellemek için background-repeat: no-repeat özelliği kullanılır.   */
+  background-size: cover; /* Elemanın arkaplanına verilen bu resim alanı belirler. */
+  background-position: center; /* Elemanın arkaplanına verilen bu resimin pozisyonunu belirler. */
+  object-fit: cover; /* Arkaplana verilmek istenen resimde oluşan bozulmaları engeller.  */
+
+  border-radius: 50%; /* Elemanın köşelerini yuvarlamak için kullanılır.px cinsinde yada % lik olarak değer alır.Yuvarlak bir şekil elde etmek istersek bunun için width ve height değeri eşit olan bir şekil(yani kare) elde edilir ve köşeleri 50% ile yuvarlanır. */
+}
+
+.list-title {
+  width: unset; /* unset bir eleman ait tanımlanan değeri iptal etmek için kullanılır.  */
+  height: unset;
+  background-color: tomato;
+  border: unset;
+}
+
+/* Htmldeki listeleme elemanların liste tipini güncellemek için list-style özelliği kullanılır.  */
+
+.list-kapsayıcı {
+  list-style: none;
+}
+
+.list-kapsayıcı1 {
+  list-style: armenian;
+}
+
+.list-kapsayıcı2 {
+  list-style: circle;
+}
+
+.list-kapsayıcı3 {
+  list-style: decimal;
+}
+
+.list-kapsayıcı4 {
+  list-style: decimal-leading-zero;
+}
+
+.list-kapsayıcı5 {
+  list-style: disc;
+}
+.list-kapsayıcı6 {
+  list-style: georgian;
+}
+.list-kapsayıcı7 {
+  list-style: inside;
+}
+.list-kapsayıcı8 {
+  list-style: lower-alpha;
+}
+.list-kapsayıcı9 {
+  list-style: upper-alpha;
+}
+.list-kapsayıcı10 {
+  list-style: lower-roman;
+}
+.list-kapsayıcı11 {
+  list-style: upper-roman;
+}
+.list-kapsayıcı12 {
+  list-style: square;
+}
+
+.text {
+  border: unset;
+  margin: 30px 10px;
+  background-color: darkred;
+  padding: 10px;
+  color: white;
+  text-transform: capitalize; /* Elemanın harflerin büyük yada küçük harf olmas durumunu ayarlar. lowercase ==> Tüm harfler küçük harf; uppercase ==>  Tüm harfler büyük harf; capitalize ==> Her kelimenin ilk harfi büyük diğerleri küçük olacak şekilde ayarlar. */
+  letter-spacing: 5px; /* Elemanın harfleri arasında boşluk bırakmak için kullanılır. */
+  text-align: center; /* Elemanın yatayda nasıl hizalanacağını belirler.
+  
+  start && left ==> Sola  hizalar.
+  
+  
+  end && right ==> Sağa hizalar.
+
+
+  center ==> Merkeze hizalar.
+  
+  */
+}
+
+.desc {
+  background-color: #f4ce14;
+  color: white;
+  line-height: 50px; /* Elemanın satır yüksekliğini ayarlamak için kullanılır. */
+}
+
+.link {
+  background-color: chocolate;
+  font-size: 40px;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+/* text-decoration ile yazı dekorasyonu düzenlenir. */
+
+#link1 {
+  text-decoration: dashed;
+  text-decoration-color: #7e3f12;
+  text-decoration-line: underline;
+}
+
+#link2 {
+  text-decoration: double;
+  text-decoration-color: #dca47c;
+  text-decoration-line: underline;
+}
+
+#link3 {
+  text-decoration: dotted;
+  text-decoration-color: #dca47c;
+  text-decoration-line: underline;
+}
+
+#link3 {
+  text-decoration: overline;
+  text-decoration-color: #dca47c;
+  text-decoration-line: underline;
+}
+
+#link4 {
+  text-decoration: wavy;
+  text-decoration-color: #dca47c;
+  text-decoration-line: underline;
+}
+#link5 {
+  text-decoration: none;
+}
+
+.inline {
+  background-color: unset;
+  text-decoration: underline;
+  text-decoration-color: #3333;
+}
+
+/* Flexbox */
+
+.container {
+  background-color: darkturquoise;
+  padding: 20px 30px;
+  display: flex; /* Flexbox yapısı aktif edildi */
+  gap: 20px; /* Flexbox yapısı aktif iken elemanların arasını açmak için kullanılır. */
+  flex-direction: column-reverse;
+}
+/* flex--direction: Flexbox yapısı içerisindeki elemanların hangi yönde hizalanacağını belirler.
+Bu özelliğin default(varsayılan) değeri flex-direction: row; dur.
+
+Flex-direction özelliğinin aldığı bazı değerler:
+
+
+! row (Default değer) ==>Flexbox yapısı içerisindeki elemanları aynı satırda hizalar.
+
+column ==> Flexbox yapısı içerisindeki elemanları aynı sütun hizalar.
+
+
+row-reverse ==> Flexbox yapısı içerisindeki elemanları aynı satırda fakat ters çevirerek hizalar.
+
+
+column-reverse ==> Flexbox yapısı içerisindeki elemanları sütunda  fakat ters çevirerek hizalar.
+
+
+
+
+*/
+
+.eleman {
+  background-color: wheat;
+}
